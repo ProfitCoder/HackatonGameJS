@@ -1,0 +1,18 @@
+<!doctype html>
+<html lang="es">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#0b1020"><title>Code Runner · Avoid & Survive</title><link rel="stylesheet" href="src/css/estilos.css"><script defer src="src/script/index.js"></script></head>
+<body>
+<main class="shell">
+ <header><a class="brand" href="./index.html"><b>&lt;/&gt;</b> CODE RUNNER</a><span class="edition">AVOID & SURVIVE / 01</span><button id="sound" aria-label="Activar sonido" aria-pressed="false">Sonido: OFF</button></header>
+ <section class="heading"><div><p class="eyebrow">EL ÚLTIMO DEPLOY DEPENDE DE TI</p><h1>Menos bugs.<br><em>Más puntos.</em></h1></div><p class="intro">Esquiva el caos. Recoge código.<br>Mantén tu proyecto con vida.</p></section>
+ <section class="dashboard" aria-label="Estadísticas"><div><small>PUNTOS</small><strong id="score">00000</strong></div><div><small>RÉCORD LOCAL</small><strong id="record">00000</strong></div><div><small>VIDAS</small><strong id="lives" aria-label="3 vidas">♥ ♥ ♥</strong></div><div><small>NIVEL</small><strong id="level">01</strong></div></section>
+ <div class="arena-wrap"><div id="arena" tabindex="0" aria-label="Zona de juego. Flechas o A y D para moverte; P para pausar.">
+  <div class="grid"></div><div class="lane l1"></div><div class="lane l2"></div><div class="lane l3"></div><div class="scan"></div>
+  <div class="arena-top"><span id="status">SISTEMA EN ESPERA</span><button id="pause" disabled aria-label="Pausar partida">Ⅱ</button></div>
+  <div id="entities"></div><div id="player" aria-label="Programador"><span>&lt;/&gt;</span><i></i></div><div id="effects"></div>
+  <div id="overlay" class="overlay"><div class="modal"><span class="badge" id="badge">PREPARA TU MEJOR VERSIÓN</span><h2 id="title">¿Listo para<br>el despliegue?</h2><p id="message">Tienes 3 vidas. Esquiva los bugs rojos y recoge fragmentos de código para sumar puntos.</p><div id="summary" hidden></div><button class="primary" id="start">Iniciar partida <span>→</span></button><p class="hint" id="hint">← → / A D para moverte · P para pausar</p></div></div>
+ </div></div>
+ <div class="bottom"><p><span class="dot"></span><span id="tip">Cada bug esquivado cuenta. Cada fragmento te acerca al récord.</span></p><span>ARRASTRA PARA MOVERTE EN MÓVIL</span></div>
+ <section class="guide" aria-label="Cómo jugar"><div><b class="bug-icon">×</b><p><strong>Esquiva bugs</strong><small>−1 vida al chocar · +10 al esquivar</small></p></div><div><b class="code-icon">&lt;/&gt;</b><p><strong>Recoge código</strong><small>+50 puntos · encadena hasta ×5</small></p></div><div><b class="shield-icon">◇</b><p><strong>Protege tu deploy</strong><small>Escudo: absorbe un impacto</small></p></div></section>
+ <footer>HECHO CON JAVASCRIPT. SOBREVIVE CON REFLEJOS.<span id="live" role="status" aria-live="polite"></span></footer>
+</main></body></html>
